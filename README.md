@@ -27,7 +27,7 @@ plt.xlabel("Derinlik")
 plt.ylabel("Sıcaklık")
 plt.title("Derinlik - Sıcaklık Grafiği")
 ## Scratch - Train
-def loss_function(m, b, points):
+ def loss_function(m, b, points):
     total_error = 0
     for i in range(len(points)):
         x = points.iloc[i].derinlik
