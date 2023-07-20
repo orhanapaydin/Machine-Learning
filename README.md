@@ -24,9 +24,9 @@ Hata miktarını düşürerek a ve b katsayıları hesaplanıp doğru denklemi o
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 ```
 
-'''
+```
 import pandas as pd
-'''
+```
 
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
