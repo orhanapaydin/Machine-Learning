@@ -18,7 +18,8 @@ MSE = ( SUM(y - y')^2 ) / N                             Denklem 1
 
 Hata miktarını düşürerek a ve b katsayıları hesaplanıp doğru denklemi oluşturulur. Bu katsayıların güncellenmesi epok (ing. epoch) olarak adlandırılan iterasyonlar ile gerçekleştirilir. Örneğin epok = 100, yüz defa katsayıların güncellenmesi anlamına gelir.
 
-'import pandas as pd
+'import pandas as pd'
+
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 ## Veri Yükleme
