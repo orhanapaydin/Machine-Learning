@@ -1,9 +1,12 @@
 # Makine Öğrenimi
 
+
 Bu seride Makine Öğrenimi yöntemleri bir akış şeklinde sunulacaktır. Yöntemlere ait konu anlatımları örnek kodlar ile verilerek pekiştirilecektir.
 
-## 1. Lineer Regrasyon
+* [1) Lineer Regresyon](#1-lineer-regresyon)
+* 
 
+## 1) Lineer Regresyon
 İstatistiksel bir yöntem olup, bir veri kümesini temsil eden en uygun doğrunun (aX + b) bulunmasıdır. Örneğin elimizde yer yüzeyinden olan derinlik (metre) ve derinliklerde elde edilen sıcaklıklardan (C) oluşan bir veri kümemiz olsun (Şekil 1). Bu veri kümesini en iyi temsil eden doğrunun hesaplanması veri kümesi içerisinde olmayan bir derinlik değerinde sıcaklığın hesaplanmasına olanak tanır. 
 
 ```
