@@ -5,6 +5,17 @@ Bu seride Makine Öğrenimi yöntemleri bir akış şeklinde sunulacaktır. Yön
 1. Lineer Regrasyon**
 
 İstatistiksel bir yöntem olup, bir veri kümesini temsil eden en uygun doğrunun (aX + b) bulunmasıdır. Örneğin elimizde yer yüzeyinden olan derinlik (metre) ve derinliklerde elde edilen sıcaklıklardan (C) oluşan bir veri kümemiz olsun (Şekil 1). Bu veri kümesini en iyi temsil eden doğrunun hesaplanması veri kümesi içerisinde olmayan bir derinlik değerinde sıcaklığın hesaplanmasına olanak tanır. 
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+```
+## Veri Yükleme
+df = pd.read_csv("linear_regression_dataset.csv", sep=";")
+plt.scatter(df., df.maas)
+plt.xlabel("Derinlik")
+plt.ylabel("Sıcaklık")
+plt.title("Derinlik - Sıcaklık Grafiği")
 
 
 
@@ -24,18 +35,7 @@ Hata miktarını düşürerek a ve b katsayıları hesaplanıp doğru denklemi o
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 ```
 
-```
-import pandas as pd
-```
 
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-## Veri Yükleme
-df = pd.read_csv("linear_regression_dataset.csv", sep=";")
-plt.scatter(df., df.maas)
-plt.xlabel("Derinlik")
-plt.ylabel("Sıcaklık")
-plt.title("Derinlik - Sıcaklık Grafiği")
 ## Scratch - Train
  def loss_function(m, b, points):
     total_error = 0
