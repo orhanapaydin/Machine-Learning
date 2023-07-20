@@ -10,14 +10,14 @@ Bu seride Makine Öğrenimi yöntemleri bir akış şeklinde sunulacaktır. Yön
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-```
-\# Veri Yükleme
+
+# Veri Yükleme
 df = pd.read_csv("linear_regression_dataset.csv", sep=";")
 plt.scatter(df., df.maas)
 plt.xlabel("Derinlik")
 plt.ylabel("Sıcaklık")
 plt.title("Derinlik - Sıcaklık Grafiği")
-
+```
 
 
 ![Şekil 1. Derinliklere karşılık sıcaklık verileri.](https://github.com/orhanapaydin/Machine-Learning/assets/95540971/699b751c-50b4-4e54-ad49-7c030b2a49a8)
