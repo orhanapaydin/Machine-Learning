@@ -9,6 +9,7 @@ Bu seride Makine Öğrenimi yöntemleri bir akış şeklinde sunulacaktır. Yön
 
 
 ![Şekil 1. Derinliklere karşılık sıcaklık verileri.](https://github.com/orhanapaydin/Machine-Learning/assets/95540971/699b751c-50b4-4e54-ad49-7c030b2a49a8)
+
 Şekil 1. Derinliklere karşılık sıcaklık verileri.           
                 
 Peki veri kümesini temsil eden en uygun doğru nasıl bulunur? Veri setimizi lineer bir doğru ile temsil etmek istersek Lineer regresyon kullanabiliriz. Basit bir doğru (y' = aX + b) şeklinde temsil edilebilir. Burada "a" doğrunun eğimi, "X" bağımsız değişken,"y'" bağımlı değişken, "b" sapma miktarı olarak tanımlanır. Bu doğru sayesinde istenilen derinlikte (X), sıcaklık değeri (y') hesaplanabilir. Burada hesaplanan y' değeri tahmin değerimizdir. Tahmin edilen değer ile gerçek sıcaklık değeri kıyaslanarak bir hata miktarı hesaplanır (Denklem 1).
