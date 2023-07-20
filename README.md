@@ -11,7 +11,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 ```
-## Veri Yükleme
+# Veri Yükleme
 df = pd.read_csv("linear_regression_dataset.csv", sep=";")
 plt.scatter(df., df.maas)
 plt.xlabel("Derinlik")
