@@ -29,7 +29,8 @@ plt.title("Derinlik - Sıcaklık Grafiği")
                 
 Peki veri kümesini temsil eden en uygun doğru nasıl bulunur? Veri setimizi lineer bir doğru ile temsil etmek istersek Lineer regresyon kullanabiliriz. Basit bir doğru (y' = aX + b) şeklinde temsil edilebilir. Burada "a" doğrunun eğimi, "X" bağımsız değişken,"y'" bağımlı değişken, "b" sapma miktarı olarak tanımlanır. Bu doğru sayesinde istenilen derinlikte (X), sıcaklık değeri (y') hesaplanabilir. Burada hesaplanan y' değeri tahmin değerimizdir. Tahmin edilen değer ile gerçek sıcaklık değeri kıyaslanarak bir hata miktarı hesaplanır (Denklem 1).
 
-MSE = ( SUM(y - y')^2 ) / N                             Denklem 1
+$$MSE={1 \over N}{\sum_{i=0}^N (y_i-y'_i)^2}$$                
+Denklem 1
 
 Hata miktarını düşürerek a ve b katsayıları hesaplanıp doğru denklemi oluşturulur. Bu katsayıların güncellenmesi epok (ing. epoch) olarak adlandırılan iterasyonlar ile gerçekleştirilir. Örneğin epok = 100, yüz defa katsayıların güncellenmesi anlamına gelir.
 
