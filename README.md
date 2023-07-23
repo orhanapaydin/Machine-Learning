@@ -1,4 +1,4 @@
-<img src="https://github.com/orhanapaydin/Machine-Learning/assets/95540971/37e348fd-1c92-4504-a6e3-48edee8f0808" width=1000 height=300>
+<img src="https://github.com/orhanapaydin/Machine-Learning/assets/95540971/37e348fd-1c92-4504-a6e3-48edee8f0808" width=1000 height=250>
 
 
 # Makine Öğrenimi
