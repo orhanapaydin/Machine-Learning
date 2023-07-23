@@ -6,7 +6,7 @@
 
 Bu seride Makine Öğrenimi yöntemleri bir akış şeklinde sunulacaktır. Yöntemlere ait konu anlatımları örnek kodlar ile verilerek pekiştirilecektir.
 
-* [1) Lineer Regresyon](#1-lineer-regresyon)
+[1) Lineer Regresyon](#1-lineer-regresyon)
 
 
 ## 1) Lineer Regresyon
@@ -46,7 +46,7 @@ def loss_function(a, b, points):
     return MSE
 ````
 
-Hata miktarını düşürerek a ve b katsayıları hesaplanıp doğru denklemi oluşturulur. Bu katsayıların güncellenmesi epok (ing. epoch) olarak adlandırılan iterasyonlar ile gerçekleştirilir. Örneğin epok = 100, yüz defa katsayıların güncellenmesi anlamına gelir. Hata miktarını düşürerek yeni katsayıların hesaplanması Gradyan İnişi (ing. Gradient Descent) yöntemi ile gerçekleştirilir. Bizim çalışmamızda, Gradyan inişi yöntemi için hata fonksiyonunun "a" ve "b" kaysayılarına göre kısmi türevleri alınır. Sonrasında ise "a" ve "b" kaysatısı Denklem 2'deki gibi güncellenir.
+Hata miktarını düşürerek a ve b katsayıları hesaplanıp doğru denklemi oluşturulur. Bu katsayıların güncellenmesi epok (ing. epoch) olarak adlandırılan iterasyonlar ile gerçekleştirilir. Örneğin epok = 100, yüz defa katsayıların güncellenmesi anlamına gelir. Hata miktarını düşürerek yeni katsayıların hesaplanması Gradyan İnişi (ing. Gradient Descent) yöntemi ile gerçekleştirilir. Bizim çalışmamızda, Gradyan inişi yöntemi için hata fonksiyonunun "a" ve "b" kaysayılarına göre kısmi türevleri alınır. Sonrasında ise "a" ve "b" katsayısı Denklem 2'deki gibi güncellenir.
 $$a = a - {∂E\over ∂a}L$$
 $$b = b - {∂E\over ∂b}L$$
 Denklem 2
@@ -73,12 +73,11 @@ def gradient_descent(a_now, b_now, points, L):
 ```
 Sonrasında eğitim süreci başlatılır. Örnekte epok=1000 olarak ayarlanmıştır.
 ```
-a = 0;         # doğrunun eğimi
-b = 1;         # bias (sapma)
-L = 0.0001     # learning rate
+a = 0;         # başlangıç değer, doğrunun eğimi
+b = 1;         # başlangıç değer, bias (sapma)
+L = 0.0001     # sabit, learning rate
 epochs = 1000  # epok sayısı
 total_error=[]
-plt.Figure()   
 for i in range(epochs):    
     a, b, error = gradient_descent(a, b, df, L)
     total_error.append(error)  
@@ -105,4 +104,5 @@ plt.plot(epochs_list,MSE);plt.xlabel("Epok");plt.ylabel("Hata - MSE ");plt.show(
 
 Şekil 4. Lineer regresyon sonucu elde edilen veri kümesini temsil eden doğru.
 
+Bu örnekte Lineer Regresyon konusu anlatılmış ve bir örnek veri kümesi kullanılarak bu verileri en iyi temsil eden bir doğru bulunmuştur. Artık bu doğru ile istenilen derinlikte tahmini bir sıcaklık değeri hesaplatabiliriz.
 
