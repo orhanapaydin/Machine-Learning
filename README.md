@@ -8,6 +8,7 @@ Bu seride Makine Öğrenimi yöntemleri bir akış şeklinde sunulacaktır. Yön
 
 [1) Lineer Regresyon](#1-lineer-regresyon)
 
+[2) Çoklu Lineer Regresyon](#2-çoklu-lineer-regresyon)
 
 ## 1) Lineer Regresyon
 İstatistiksel bir yöntem olup, bir veri kümesini temsil eden en uygun doğrunun (aX + b) bulunmasıdır. Örneğin elimizde yer yüzeyinden olan derinlik (metre) ve derinliklerde elde edilen sıcaklıklardan (C) oluşan bir veri kümesi olsun (Şekil 1). Bu veri kümesini en iyi temsil eden doğrunun hesaplanması veri kümesi içerisinde olmayan bir derinlik değerinde sıcaklığın hesaplanmasına olanak tanır. 
@@ -106,3 +107,5 @@ plt.plot(epochs_list,MSE);plt.xlabel("Epok");plt.ylabel("Hata - MSE ");plt.show(
 
 Bu örnekte Lineer Regresyon konusu anlatılmış ve bir örnek veri kümesi kullanılarak bu verileri en iyi temsil eden bir doğru bulunmuştur. Artık bu doğru ile istenilen derinlikte tahmini bir sıcaklık değeri hesaplatabiliriz.
 
+
+## 2) Çoklu Lineer Regresyon
